@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employees</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/employees.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="mark">V</div>
+                <span>vela</span>
+            </div>
+            <div class="nav-group">
+                <a href="index.html" class="nav-item">Dashboards</a>
+                <a href="employees.html" class="nav-item active">Employees</a>
+                <a href="" class="nav-item">Finance</a>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="topbar">
+                <h1 class="panel-title">Employees</h1>
+            </div>
+
+            <div class="content">
+                <div class="panel employees-panel">
+                    <div class="employee-toolbar">
+                        <div class="employee-search-wrap">
+                            <input type="text" id="search" class="employee-filter" placeholder="Search employees...">
+                        </div>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table class="employees-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Name</th>
+                                    <th>Job</th>
+                                    <th>Department</th>
+                                    <th>Email</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="employeesbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="model" class="model hidden" aria-hidden="true">
+                <div class="model-box">
+                    <button id="close-model" class="close-model">×</button>
+                    <img src="" alt="profile" id="pPhoto" class="profile-photo">
+                    <h2 id="pName"></h2>
+                    <p id="pJob" class="muted"></p>
+                    <p id="pDept" class="muted"></p>
+                    <p id="pEmail" class="muted"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/employees.js"></script>
+</body>
+
+</html>
